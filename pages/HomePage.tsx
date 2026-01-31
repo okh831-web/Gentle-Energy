@@ -23,8 +23,8 @@ const HomePage: React.FC<HomePageProps> = ({ projects }) => {
               데이터 기반 교육성과관리와 <br />
               <span className="text-emerald-400">AI 수업설계</span>를 연결하다
             </h1>
-            <div className="text-lg text-slate-300 mb-8 leading-relaxed space-y-2">
-              <p>역량기반 교육과정 성과관리, 핵심역량 진단 분석, AI 활용 교수설계(Active Learning 포함)를 통합 지원합니다.</p>
+            <div className="text-lg text-slate-300 mb-8 leading-relaxed">
+              <p className="mb-2">역량기반 교육과정 성과관리, 핵심역량 진단 분석, AI 활용 교수설계(Active Learning 포함)를 통합 지원합니다.</p>
               <p>대학·지자체·기관 대상 강의/워크숍/자문을 진행합니다.</p>
             </div>
             

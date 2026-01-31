@@ -1,5 +1,4 @@
 
-import React from 'react';
 import { Project, Publication, Stat, Service } from './types';
 
 export const INITIAL_STATS: Stat[] = [
@@ -46,7 +45,7 @@ export const INITIAL_PROJECTS: Project[] = [
     outputs: ['자동화 엑셀 템플릿', 'R기반 분석 스크립트', '표준 리포트 양식'],
     results: '제작 시간 80% 단축, 누락/오류 95% 감소, 교수·학과 피드백 루프 형성',
     nextSteps: '공유-평가-환류까지 연결되는 미니앱화',
-    imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200',
+    imageUrl: 'https://images.unsplash.com/photo-1551288049-bbda48658a7d?auto=format&fit=crop&q=80&w=1200',
   },
   {
     id: '2',
@@ -57,7 +56,7 @@ export const INITIAL_PROJECTS: Project[] = [
     outputs: ['매핑 적정성 보고서', '연계성 강화 가이드라인', '통합 역량 지도'],
     results: '전공 역량 정렬도 40% 향상, 학과별 교육과정 개편 근거 마련',
     nextSteps: 'LMS 연동을 통한 실시간 역량 취득 현황 모니터링',
-    imageUrl: 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80&w=1200',
+    imageUrl: 'https://images.unsplash.com/photo-1454165833767-027ffea9e77b?auto=format&fit=crop&q=80&w=1200',
   },
   {
     id: '3',
@@ -68,7 +67,7 @@ export const INITIAL_PROJECTS: Project[] = [
     outputs: ['AI 기반 수업설계안', '학습자 반응형 활동지', '평가 루브릭'],
     results: '워크숍 만족도 4.9/5.0, 수업 설계 적용 의사 92% 확보',
     nextSteps: '교수법별 AI 활용 사례집 발간 및 학내 확산',
-    imageUrl: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=1200',
+    imageUrl: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200',
   },
 ];
 
