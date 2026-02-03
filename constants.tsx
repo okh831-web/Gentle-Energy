@@ -1,3 +1,4 @@
+
 import { Project, Publication, Stat, Service } from './types';
 
 export const INITIAL_STATS: Stat[] = [
@@ -44,7 +45,7 @@ export const INITIAL_PROJECTS: Project[] = [
     outputs: ['자동화 엑셀 템플릿', 'R기반 분석 스크립트', '표준 리포트 양식'],
     results: '제작 시간 80% 단축, 누락/오류 95% 감소, 교수·학과 피드백 루프 형성',
     nextSteps: '공유-평가-환류까지 연결되는 미니앱화',
-    imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200',
+    imageUrl: 'https://images.unsplash.com/photo-1551288049-bbda48658a7d?auto=format&fit=crop&q=80&w=1200',
   },
   {
     id: '2',
@@ -55,7 +56,7 @@ export const INITIAL_PROJECTS: Project[] = [
     outputs: ['매핑 적정성 보고서', '연계성 강화 가이드라인', '통합 역량 지도'],
     results: '전공 역량 정렬도 40% 향상, 학과별 교육과정 개편 근거 마련',
     nextSteps: 'LMS 연동을 통한 실시간 역량 취득 현황 모니터링',
-    imageUrl: 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80&w=1200',
+    imageUrl: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200',
   },
   {
     id: '3',
@@ -66,7 +67,7 @@ export const INITIAL_PROJECTS: Project[] = [
     outputs: ['AI 기반 수업설계안', '학습자 반응형 활동지', '평가 루브릭'],
     results: '워크숍 만족도 4.9/5.0, 수업 설계 적용 의사 92% 확보',
     nextSteps: '교수법별 AI 활용 사례집 발간 및 학내 확산',
-    imageUrl: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=1200',
+    imageUrl: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200',
   },
 ];
 
@@ -91,5 +92,12 @@ export const PUBLICATIONS: Publication[] = [
     title: '[가이드북] 생성형 AI를 활용한 수업 설계 체크리스트',
     summary: '교수자가 수업 준비 단계에서 AI를 효과적이고 윤리적으로 활용할 수 있도록 돕는 실천적 가이드라인',
     keywords: ['AI 수업설계', '체크리스트', '실무가이드'],
+  },
+  {
+    id: 'p4',
+    type: 'resource',
+    title: '[가이드북] AL(Active Learning) 수업 가이드 북',
+    summary: '교수자가 액티브 러닝을 위한 교수방법, 설계, 도구활용 등 실천적 가이드 북',
+    keywords: ['액티브러닝', '교수방법', '수업설계', '에듀테크'],
   },
 ];

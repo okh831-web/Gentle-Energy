@@ -10,53 +10,82 @@ interface HomePageProps {
 
 const HomePage: React.FC<HomePageProps> = ({ projects }) => {
   return (
-    <div>
+    <div className="bg-white text-left">
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 bg-slate-900 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(16,185,129,0.2),transparent_70%)]"></div>
-        </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl">
-            <h2 className="text-emerald-500 font-medium text-lg mb-4 tracking-wide">건양대 교수 · 교육학 박사</h2>
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6 font-serif leading-tight">
-              데이터 기반 교육성과관리와 <br />
-              <span className="text-emerald-400">AI 수업설계</span>를 연결하다
-            </h1>
-            <div className="text-lg text-slate-300 mb-8 leading-relaxed">
-              <p className="mb-2">역량기반 교육과정 성과관리, 핵심역량 진단 분석, AI 활용 교수설계(Active Learning 포함)를 통합 지원합니다.</p>
-              <p>대학·지자체·기관 대상 강의/워크숍/자문을 진행합니다.</p>
+      <section className="relative min-h-[90vh] flex items-center pt-24 pb-20 overflow-hidden bg-[#0a101f]">
+        <div className="max-w-[1600px] mx-auto px-6 sm:px-10 lg:pl-32 lg:pr-12 relative z-10 w-full">
+          <div className="max-w-6xl">
+            {/* Top Badge with English Mixed Case */}
+            <div className="mb-10 flex flex-wrap items-center gap-4 animate-in fade-in slide-in-from-left duration-700">
+              <h2 className="text-emerald-500 font-bold text-xl lg:text-2xl">
+                건양대 교수 · 교육학 박사
+              </h2>
+              <span className="hidden sm:block w-px h-5 bg-slate-700"></span>
+              <span className="text-slate-400 text-sm lg:text-base font-medium opacity-80">
+                Professor & Ph.D. in Education
+              </span>
             </div>
             
-            <div className="flex flex-wrap gap-2 mb-10">
+            {/* Main Title - Spacing widened from -0.08em to -0.02em */}
+            <h1 className="text-4xl lg:text-[5.5rem] font-bold mb-16 leading-[1.15] text-white font-myeongjo tracking-[-0.02em] animate-in fade-in slide-in-from-left duration-1000 delay-100">
+              데이터 기반 교육성과관리와<br />
+              <span className="text-emerald-400">AI 수업설계</span>를 연결하다
+            </h1>
+            
+            {/* Description with Refined English Captions (Mixed Case) */}
+            <div className="space-y-10 mb-20 animate-in fade-in slide-in-from-left duration-1000 delay-300">
+              <div className="max-w-4xl">
+                <p className="text-xl lg:text-2xl text-slate-100 leading-relaxed font-normal">
+                  역량기반 교육과정 성과관리, 핵심역량 진단 분석, AI 활용 교수설계(Active Learning 포함)를 지원합니다.
+                </p>
+                <p className="text-sm lg:text-[15px] text-slate-500 mt-3 font-medium opacity-80 leading-relaxed">
+                  Support for competency-based curriculum management, diagnostic analysis, and AI-integrated instructional design.
+                </p>
+              </div>
+              
+              <div className="max-w-4xl">
+                <p className="text-xl lg:text-2xl text-slate-100 leading-relaxed font-normal">
+                  대학·지자체·기관 대상 강의/워크숍/자문을 진행합니다.
+                </p>
+                <p className="text-sm lg:text-[15px] text-slate-500 mt-3 font-medium opacity-80 leading-relaxed">
+                  Conducting professional lectures, workshops, and consulting for universities and public institutions.
+                </p>
+              </div>
+            </div>
+            
+            {/* Style Tags */}
+            <div className="flex flex-wrap gap-3 mb-20 animate-in fade-in slide-in-from-left duration-1000 delay-500">
               {['에듀테크 교수법', 'AI 기반 수업 구성', '핵심역량 분석', '성과관리 체계화', '현장 적용'].map(tag => (
-                <span key={tag} className="px-3 py-1 bg-white/10 rounded-full text-xs font-medium border border-white/20">
+                <span key={tag} className="px-6 py-3 bg-[#1e293b]/60 rounded-full text-[14px] font-medium text-slate-300 border border-slate-700/40 backdrop-blur-sm hover:border-emerald-500/50 transition-colors cursor-default">
                   {tag}
                 </span>
               ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact" className="px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-lg transition-all shadow-lg shadow-emerald-900/20 text-center">
-                강의·워크숍 요청
+            {/* Action Buttons with Mixed Case English */}
+            <div className="flex flex-col sm:flex-row gap-6 animate-in fade-in slide-in-from-bottom duration-1000 delay-700">
+              <Link to="/contact" className="px-14 py-6 bg-[#00a878] hover:bg-emerald-500 text-white font-bold rounded-2xl transition-all text-center flex flex-col items-center justify-center shadow-2xl shadow-emerald-900/30 group">
+                <span className="text-2xl">강의·워크숍 요청</span>
+                <span className="text-xs font-medium opacity-70 mt-1.5 group-hover:opacity-100 transition-opacity">Request Lectures & Workshops</span>
               </Link>
-              <Link to="/projects" className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-lg border border-white/20 transition-all text-center">
-                프로젝트·사례 보기
+              <Link to="/projects" className="px-14 py-6 bg-[#1e293b] hover:bg-slate-700 text-white font-bold rounded-2xl border border-slate-600 transition-all text-center flex flex-col items-center justify-center group shadow-xl">
+                <span className="text-2xl">프로젝트·사례 보기</span>
+                <span className="text-xs font-medium opacity-40 mt-1.5 group-hover:opacity-70 transition-opacity">View Project Case Studies</span>
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Trust Indicators (Stats) */}
-      <section className="py-12 bg-white border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+      {/* Stats Section */}
+      <section className="py-28 border-b border-slate-50 bg-white">
+        <div className="max-w-[1600px] mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16">
             {INITIAL_STATS.map((stat, idx) => (
-              <div key={idx} className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-slate-900 mb-1">{stat.value}</div>
-                <div className="text-sm font-semibold text-emerald-700 uppercase tracking-tighter mb-1">{stat.label}</div>
-                <div className="text-xs text-slate-500">{stat.description}</div>
+              <div key={idx} className="text-left group">
+                <div className="text-7xl font-bold text-slate-900 mb-4 tracking-tighter group-hover:text-emerald-600 transition-colors">{stat.value}</div>
+                <div className="text-sm font-bold text-emerald-700 mb-2 uppercase tracking-[0.2em]">{stat.label}</div>
+                <div className="text-[15px] text-slate-400 leading-relaxed font-medium">{stat.description}</div>
               </div>
             ))}
           </div>
@@ -64,27 +93,21 @@ const HomePage: React.FC<HomePageProps> = ({ projects }) => {
       </section>
 
       {/* Services Section */}
-      <section className="py-24 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-sm font-bold text-emerald-700 uppercase tracking-widest mb-3">Services</h2>
-            <h3 className="text-3xl lg:text-4xl font-bold text-slate-900 font-serif">제공 서비스</h3>
+      <section className="py-32 bg-slate-50/40">
+        <div className="max-w-[1600px] mx-auto px-6 lg:px-12">
+          <div className="mb-24">
+            <h2 className="text-sm font-bold text-emerald-700 uppercase tracking-[0.4em] mb-4">Professional Expertise</h2>
+            <h3 className="text-5xl lg:text-6xl font-bold text-slate-900 font-myeongjo tracking-tight">제공 서비스</h3>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {INITIAL_SERVICES.map((service, idx) => (
-              <div key={idx} className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 bg-emerald-50 text-emerald-700 rounded-xl flex items-center justify-center mb-6">
-                  {/* Mock Icons */}
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                </div>
-                <h4 className="text-lg font-bold mb-4 text-slate-900 leading-snug">{service.title}</h4>
-                <p className="text-slate-600 text-sm mb-6 leading-relaxed">{service.description}</p>
-                <ul className="space-y-2">
+              <div key={idx} className="bg-white p-14 rounded-[3rem] border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-500 group">
+                <h4 className="text-2xl lg:text-3xl font-bold mb-6 text-slate-900 font-myeongjo group-hover:text-emerald-700 transition-colors leading-tight">{service.title}</h4>
+                <p className="text-slate-500 text-[15px] mb-12 leading-relaxed font-medium">{service.description}</p>
+                <ul className="space-y-5">
                   {service.outputs.map((out, i) => (
-                    <li key={i} className="flex items-center text-xs text-slate-500">
-                      <span className="w-1 h-1 bg-emerald-500 rounded-full mr-2"></span>
+                    <li key={i} className="flex items-start text-[14px] text-slate-400 font-bold uppercase tracking-tight">
+                      <span className="w-2 h-2 bg-emerald-400 rounded-full mr-4 mt-2 shadow-sm"></span>
                       {out}
                     </li>
                   ))}
@@ -95,44 +118,20 @@ const HomePage: React.FC<HomePageProps> = ({ projects }) => {
         </div>
       </section>
 
-      {/* Methodology Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-sm font-bold text-emerald-700 uppercase tracking-widest mb-3">Methodology</h2>
-          <h3 className="text-3xl lg:text-4xl font-bold text-slate-900 font-serif mb-16">추진 프로세스</h3>
-          <div className="flex flex-col lg:flex-row justify-between items-start gap-8 relative">
-            <div className="hidden lg:block absolute top-12 left-0 w-full h-0.5 bg-slate-100 z-0"></div>
-            {[
-              { title: '진단', desc: '요구분석 및 현황 파악' },
-              { title: '설계', desc: '지표 개발 및 도구 설계' },
-              { title: '실행', desc: '수업 운영 및 데이터 수집' },
-              { title: '분석', desc: '데이터 통합 및 성과 분석' },
-              { title: '환류', desc: '개선안 도출 및 매뉴얼화' },
-            ].map((step, idx) => (
-              <div key={idx} className="flex-1 w-full lg:w-auto relative z-10">
-                <div className="flex flex-col items-center">
-                  <div className="w-14 h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center font-bold text-xl mb-4 shadow-lg shadow-emerald-200">
-                    {idx + 1}
-                  </div>
-                  <h4 className="text-lg font-bold text-slate-900 mb-2">{step.title}</h4>
-                  <p className="text-sm text-slate-500">{step.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+      {/* Philosophy Section */}
+      <section className="py-48 bg-white text-center relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none">
+          <div className="text-[25rem] font-bold text-slate-900 absolute -bottom-32 -right-32 italic">INSIGHT</div>
         </div>
-      </section>
-
-      {/* Brief Intro */}
-      <section className="py-24 bg-emerald-950 text-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <p className="text-2xl font-serif italic mb-8 leading-relaxed text-emerald-100">
-            "데이터는 단순한 설명이 아니라 실행을 위한 언어입니다."
+        <div className="max-w-5xl mx-auto px-6 relative z-10">
+          <p className="text-4xl lg:text-6xl font-myeongjo italic mb-16 text-slate-800 leading-tight tracking-tight">
+            "데이터는 단순한 설명이 아니라<br/>실행을 위한 언어입니다."
           </p>
-          <p className="text-lg text-emerald-200/80">
-            성과관리센터의 일이 전 대학으로 확산될 수 있도록 표준화된 시스템을 구축하고,<br />
+          <div className="w-28 h-2 bg-emerald-500 mx-auto mb-16 rounded-full opacity-30"></div>
+          <p className="text-2xl lg:text-3xl text-slate-600 font-medium leading-relaxed max-w-4xl mx-auto mb-10">
             모든 교수자가 AI를 도구 삼아 더욱 가치 있는 교육을 실천하도록 돕는 것이 저의 방향입니다.
           </p>
+          <p className="text-slate-400 text-xl font-serif italic opacity-70">Empowering educators to achieve excellence through the strategic use of data and AI.</p>
         </div>
       </section>
     </div>

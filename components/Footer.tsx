@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
           </div>
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-widest text-slate-500 mb-4">Contact</h4>
-            <p className="text-slate-400 text-sm mb-2">Email: okh831@naver.com</p>
+            <p className="text-slate-400 text-sm mb-2">Email: okh831@gmail.com</p>
             <p className="text-slate-400 text-sm">Response Time: 48시간 내 회신</p>
           </div>
           <div>
