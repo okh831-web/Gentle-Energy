@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
+import BlogPage from './pages/BlogPage';
 import AboutPage from './pages/AboutPage';
 import ExpertisePage from './pages/ExpertisePage';
 import ProjectsPage from './pages/ProjectsPage';
@@ -57,6 +58,7 @@ const App: React.FC = () => {
         <main className="flex-grow pt-16">
           <Routes>
             <Route path="/" element={<HomePage projects={projects} />} />
+            <Route path="/blog" element={<BlogPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/expertise" element={<ExpertisePage />} />
             <Route path="/projects" element={<ProjectsPage projects={projects} />} />

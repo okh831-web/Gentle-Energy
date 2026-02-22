@@ -32,3 +32,14 @@ export interface Service {
   icon: string;
   outputs: string[];
 }
+
+export interface BlogPost {
+  id: string;
+  title: string;
+  date: string;
+  content: string;
+  category: string;
+  imageUrl?: string;
+  comments?: number;
+  isNotice?: boolean;
+}

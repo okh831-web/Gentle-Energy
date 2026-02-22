@@ -1,5 +1,5 @@
 
-import { Project, Publication, Stat, Service } from './types';
+import { Project, Publication, Stat, Service, BlogPost } from './types';
 
 export const INITIAL_STATS: Stat[] = [
   { label: '진행 프로젝트', value: '45+', description: '교육혁신 및 성과관리 솔루션' },
@@ -99,5 +99,70 @@ export const PUBLICATIONS: Publication[] = [
     title: '[가이드북] AL(Active Learning) 수업 가이드 북',
     summary: '교수자가 액티브 러닝을 위한 교수방법, 설계, 도구활용 등 실천적 가이드 북',
     keywords: ['액티브러닝', '교수방법', '수업설계', '에듀테크'],
+  },
+];
+
+export const INITIAL_BLOG_POSTS: BlogPost[] = [
+  {
+    id: 'b1',
+    title: '정밀한 신앙으로 나를 완성하는 법',
+    date: '2026. 2. 20.',
+    content: '하나님의 거울, 나를 보는 거울...',
+    category: '책은 새로운 창문',
+    imageUrl: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&q=80&w=400&h=300',
+    comments: 0,
+  },
+  {
+    id: 'b2',
+    title: '"성경이 입체적으로 보인다!" 지도로 완벽 정리한 사도 바울의 전...',
+    date: '2026. 2. 9.',
+    content: '지도로 보는 성경...',
+    category: '책은 새로운 창문',
+    imageUrl: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=400&h=300',
+    comments: 2,
+  },
+  {
+    id: 'b3',
+    title: '성경연구를 쉽게 하는 방법, 이 책이다',
+    date: '2026. 1. 19.',
+    content: '삶을 변화시키는 성경연구...',
+    category: '책은 새로운 창문',
+    imageUrl: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=400&h=300',
+    comments: 1,
+  },
+  {
+    id: 'b4',
+    title: '국가보안법 폐지는 혼란의 극치',
+    date: '2025. 12. 14.',
+    content: '시사 고찰...',
+    category: '책은 새로운 창문',
+    imageUrl: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=400&h=300',
+    comments: 0,
+  },
+  {
+    id: 'b5',
+    title: '주말엔 여섯 평 농막으로 갑니다. 별 다섯 개',
+    date: '2025. 11. 6.',
+    content: '농막 라이프...',
+    category: '책은 새로운 창문',
+    imageUrl: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=400&h=300',
+    comments: 0,
+  },
+  {
+    id: 'b6',
+    title: '책 소개, <삶을 변화시키는 성경연구>',
+    date: '2025. 10. 17.',
+    content: '책 소개...',
+    category: '책은 새로운 창문',
+    imageUrl: 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&q=80&w=400&h=300',
+    comments: 0,
+  },
+  {
+    id: 'b_notice1',
+    title: '솔로몬 한글학교 Open 클릭',
+    date: '2026. 2. 15.',
+    content: '공지사항입니다.',
+    category: '공지',
+    isNotice: true,
   },
 ];
