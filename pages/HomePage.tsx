@@ -119,7 +119,7 @@ const HomePage: React.FC<HomePageProps> = ({ projects }) => {
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-48 bg-white text-center relative overflow-hidden">
+      <section className="pt-20 pb-48 bg-white text-center relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none">
           <div className="text-[25rem] font-bold text-slate-900 absolute -bottom-32 -right-32 italic">INSIGHT</div>
         </div>
